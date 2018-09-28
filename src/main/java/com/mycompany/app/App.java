@@ -67,22 +67,22 @@ public static void main(String[] args) {
 
           String input2 = req.queryParams("input2");
           java.util.Scanner sc2 = new java.util.Scanner(input2);
-          sc1.useDelimiter("[;\r\n]+");
+          sc2.useDelimiter("[;\r\n]+");
           java.util.ArrayList<Integer> inputList2 = new java.util.ArrayList<>();
           while (sc2.hasNext())
           {
-            int value = Integer.parseInt(sc2.next().replaceAll("\\s",""));
-            inputList.add(value);
+            int value2 = Integer.parseInt(sc2.next().replaceAll("\\s",""));
+            inputList.add(value2);
           }
           System.out.println(inputList2);
           
           String input3 = req.queryParams("input3").replaceAll("\\s","");
-          int input2AsInt = Integer.parseInt(input3);
+          int input3AsInt = Integer.parseInt(input3);
 
           String input4 = req.queryParams("input4").replaceAll("\\s","");
-          int input3AsInt = Integer.parseInt(input4);
+          int input4AsInt = Integer.parseInt(input4);
           
-          int result = App.search(inputList, inputList2,input2AsInt,input3AsInt);
+          int result = App.search(inputList, inputList2,input3AsInt,input4AsInt);
    
          Map map = new HashMap();
           map.put("result", result);
