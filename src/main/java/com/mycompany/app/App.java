@@ -13,7 +13,7 @@ import spark.template.mustache.MustacheTemplateEngine;
 
 public class App
 {
-  public static int search(ArrayList<Integer> array,ArrayList<Integer> array2,int input1, int input2) { // This method counting how many "e" integer element in ArrayList
+  public static int search(ArrayList<Integer> array,ArrayList<Integer> array2,int input1, int input2) { 
   System.out.println("inside search");
   if (array == null||array2 == null) return -3;
   boolean flag1=false;
